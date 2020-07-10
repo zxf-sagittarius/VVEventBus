@@ -1,1 +1,1 @@
-../../../../../VVEventBus/Classes/actionSubscriber/VVCompoundDisposable.h
+../../../../../VVEventBus/Classes/disposable/VVCompoundDisposable.h

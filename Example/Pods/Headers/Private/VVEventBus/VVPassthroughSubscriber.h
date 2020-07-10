@@ -1,1 +1,1 @@
-../../../../../VVEventBus/Classes/disposable/VVPassthroughSubscriber.h
+../../../../../VVEventBus/Classes/actionSubscriber/VVPassthroughSubscriber.h

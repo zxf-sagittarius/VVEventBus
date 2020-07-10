@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E2DE50DA889F2BC9924BCFD87C1BCF /* VVCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3771DB41AEA8005BA392B16B6B4C9BDA /* VVCompoundDisposable.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		10E86F28123AF209DF6ACC7B47EFCEE3 /* VVDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = F316F549BC32294F1B1C5F0F76D64E2B /* VVDisposable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E1387DE6F80D545F1F6DD93B7C95E0D /* VVPassthroughSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = E448C65A452BF3901BA641C66E45C2CE /* VVPassthroughSubscriber.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		183C7B69A6DF3674DB11453B5B3FA746 /* VVDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = F53387D374EA94A85E4EC955192532E0 /* VVDisposable.m */; };
 		1A5818DA21C4A8FA5BFC1AA8A10F7AE5 /* Pods-VVEventBus_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E8895E131292032A63DE532E21E24 /* Pods-VVEventBus_Tests-dummy.m */; };
-		20A4D716CD20CE93697E01ADD5DFC9B3 /* VVEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 791D24354807C89C98FE8EF28B0B8F97 /* VVEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2F9F0787B3F5D6B78220BE5971608B99 /* VVActionSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AED687F1E83FBE846E81734947312E7 /* VVActionSubscriber.m */; };
-		35B78D26FB041E745962F5DB00A53A21 /* VVBusStations.m in Sources */ = {isa = PBXBuildFile; fileRef = FED83F81DAD4C1EAFB6C954065731A82 /* VVBusStations.m */; };
-		38F64CBC27CDFD9BAE225EBC29B0D50B /* VVBusStations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEB0E235198A22C7BC463A556E666A9 /* VVBusStations.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		500B4C51F2600C1FCCF06C04D645E407 /* VVPassthroughSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = E10C6399553726D35D81B71AF02306FF /* VVPassthroughSubscriber.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5426004EC91AB412003CE84026A2C3C0 /* VVEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BC6C43F9660512E76A9267DDE301E /* VVEvent.m */; };
-		647F99AC17937DB25D6377E0C51D3A90 /* VVPassthroughSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB3FAC47EBD851E8C91E4DCAEE7A49 /* VVPassthroughSubscriber.m */; };
-		80D0EDE67D58F30FC62BF24D3A35EFD3 /* VVDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C8C5E630295481420BC09567C87A5F /* VVDisposable.m */; };
-		8664F1153B6D178459540888D2541FF3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F070F1DC6C20835739516E36BEDBA692 /* ReplaceMe.m */; };
-		8F85F70FCA9CFE2E08293E617BF0704D /* VVBus.h in Headers */ = {isa = PBXBuildFile; fileRef = C5976997E6C1F314D9DDB4626F404467 /* VVBus.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9FF956F6D14A164EB202294342A181D9 /* VVAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289C76C03860B0FC750877C4F6B50A5 /* VVAction.m */; };
-		A53DD02916862D289BEF2E0F31AC7537 /* VVAction.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5DDF8B8AF62A02EA85427F9345291E /* VVAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AE8C3A2674D98F1BB38B0B5469FAE35 /* VVActionSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = E71AB157897943AAF871376EB431B29A /* VVActionSubscriber.m */; };
+		34976296BEFDED5558B34C23588343EC /* VVCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0614662B7A0EAB835ED624982FB37E1C /* VVCompoundDisposable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		367928B16046DA35F94291933F5ED7EA /* VVActionSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1F2BD63AFCFE480DCE635548600734 /* VVActionSubscriber.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D5F97FF071337DE0E142F7839F67150 /* VVCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 105B5DA48EB8AD13DCC3768FB2E536CE /* VVCompoundDisposable.m */; };
+		47D3E3784833283A852FAEC4048FDBD7 /* VVEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 791D24354807C89C98FE8EF28B0B8F97 /* VVEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6AFAC70130E949D96051D87F7CF1A18B /* VVEventBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BEF55DCC178C2E37307D620FB313 /* VVEventBus-dummy.m */; };
+		7431ECF301E2D9382B53CA526630CF4F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F070F1DC6C20835739516E36BEDBA692 /* ReplaceMe.m */; };
+		86B61CE825D5048DB7AABB2296BC67E4 /* VVEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BC6C43F9660512E76A9267DDE301E /* VVEvent.m */; };
+		A4A736CFEDFCBCCBCFFBE49AABC52A6D /* VVDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB0627DEC1FAB2EC60F38FD504596C2 /* VVDisposable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA7DA1E4B07EFE94ACF45DBDE0D4B3F3 /* VVPassthroughSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B154F298E2FA98E86A2BF7CAB679 /* VVPassthroughSubscriber.m */; };
 		AA89A4A49DEF7C65B08700C899291378 /* Pods-VVEventBus_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC40F8E38E1B2B7720354674075E922 /* Pods-VVEventBus_Example-dummy.m */; };
-		D0688D20A00E0D9D14340BF67B3DF4AD /* VVActionSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F22E5F0377FB71CC84DB8C53C2410E /* VVActionSubscriber.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D6F53B4FD0B61AF7C06E9A3B4B74DFDE /* VVBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B841F00F562225C43D5018092839 /* VVBus.m */; };
-		EB1145F33C0465A426724784E012A943 /* VVCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DA30E7DCCA13D9A8EF4913FE9401A /* VVCompoundDisposable.m */; };
-		FAB1324C965C410A1D59D18141CB3757 /* VVEventBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BEF55DCC178C2E37307D620FB313 /* VVEventBus-dummy.m */; };
+		C336FAED2C4167FDE5737644A7178BB1 /* VVBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B841F00F562225C43D5018092839 /* VVBus.m */; };
+		C5778CA1D7A7045C1B850A30B3347756 /* VVAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289C76C03860B0FC750877C4F6B50A5 /* VVAction.m */; };
+		C81D69531C744096D0E024B90A2A6972 /* VVBusStations.m in Sources */ = {isa = PBXBuildFile; fileRef = FED83F81DAD4C1EAFB6C954065731A82 /* VVBusStations.m */; };
+		CCCB7439E47ECBC5FEDEE9C69D893FCE /* VVBus.h in Headers */ = {isa = PBXBuildFile; fileRef = C5976997E6C1F314D9DDB4626F404467 /* VVBus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6078481FEF44BBCFA48E15FDBFA7157 /* VVBusStations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEB0E235198A22C7BC463A556E666A9 /* VVBusStations.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E25F2785BA0D6459CFB7025A0D978F90 /* VVAction.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5DDF8B8AF62A02EA85427F9345291E /* VVAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,17 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C9B154F298E2FA98E86A2BF7CAB679 /* VVPassthroughSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVPassthroughSubscriber.m; sourceTree = "<group>"; };
+		0614662B7A0EAB835ED624982FB37E1C /* VVCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVCompoundDisposable.h; sourceTree = "<group>"; };
 		0904291ABB0758BB7F45BB75A1ED9ADF /* VVEventBus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVEventBus.xcconfig; sourceTree = "<group>"; };
 		0A6CBCDD14F10FE59DBE84377C4AFA35 /* libPods-VVEventBus_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VVEventBus_Tests.a"; path = "libPods-VVEventBus_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		105B5DA48EB8AD13DCC3768FB2E536CE /* VVCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVCompoundDisposable.m; sourceTree = "<group>"; };
 		13DF2FFFA318C0F0C5EA410A89FCCE0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1DEB0E235198A22C7BC463A556E666A9 /* VVBusStations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBusStations.h; sourceTree = "<group>"; };
 		29489EC19FE657FD4ACC91415E5964F4 /* VVEventBus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVEventBus-prefix.pch"; sourceTree = "<group>"; };
-		2AED687F1E83FBE846E81734947312E7 /* VVActionSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVActionSubscriber.m; sourceTree = "<group>"; };
 		2D2E8895E131292032A63DE532E21E24 /* Pods-VVEventBus_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VVEventBus_Tests-dummy.m"; sourceTree = "<group>"; };
-		2EFB3FAC47EBD851E8C91E4DCAEE7A49 /* VVPassthroughSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVPassthroughSubscriber.m; sourceTree = "<group>"; };
 		304FC36EED7F9C3842B6645ED8EC3034 /* Pods-VVEventBus_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VVEventBus_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3771DB41AEA8005BA392B16B6B4C9BDA /* VVCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVCompoundDisposable.h; sourceTree = "<group>"; };
-		3D8DA30E7DCCA13D9A8EF4913FE9401A /* VVCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVCompoundDisposable.m; sourceTree = "<group>"; };
+		3A1F2BD63AFCFE480DCE635548600734 /* VVActionSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVActionSubscriber.h; sourceTree = "<group>"; };
 		4289C76C03860B0FC750877C4F6B50A5 /* VVAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVAction.m; sourceTree = "<group>"; };
 		5CF7AB9730C254575897696A2ECD3222 /* VVEventBus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VVEventBus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D12A4C88B4591E07876F6C5827CEE71 /* Pods-VVEventBus_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VVEventBus_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -68,20 +68,20 @@
 		70E01D3C03AD7B87538AB34687F6F940 /* Pods-VVEventBus_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VVEventBus_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		791D24354807C89C98FE8EF28B0B8F97 /* VVEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVEvent.h; path = VVEventBus/Classes/VVEvent.h; sourceTree = "<group>"; };
 		7B6BC6C43F9660512E76A9267DDE301E /* VVEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VVEvent.m; path = VVEventBus/Classes/VVEvent.m; sourceTree = "<group>"; };
-		81C8C5E630295481420BC09567C87A5F /* VVDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVDisposable.m; sourceTree = "<group>"; };
 		864D6703297ECA502A050AC04C7C55C2 /* Pods-VVEventBus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVEventBus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C70B841F00F562225C43D5018092839 /* VVBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VVBus.m; path = VVEventBus/Classes/VVBus.m; sourceTree = "<group>"; };
-		98F22E5F0377FB71CC84DB8C53C2410E /* VVActionSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVActionSubscriber.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC36BEF55DCC178C2E37307D620FB313 /* VVEventBus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VVEventBus-dummy.m"; sourceTree = "<group>"; };
 		AE5DDF8B8AF62A02EA85427F9345291E /* VVAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVAction.h; sourceTree = "<group>"; };
+		BAB0627DEC1FAB2EC60F38FD504596C2 /* VVDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVDisposable.h; sourceTree = "<group>"; };
 		BDFC5D537AF0CEE4DC313BA8CE0CCE6D /* Pods-VVEventBus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVEventBus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C5976997E6C1F314D9DDB4626F404467 /* VVBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVBus.h; path = VVEventBus/Classes/VVBus.h; sourceTree = "<group>"; };
 		C8E73ABA8EBF02E0DC17907600136291 /* libPods-VVEventBus_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VVEventBus_Example.a"; path = "libPods-VVEventBus_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED8F43B7BFE730365FC36C057ED30C2 /* Pods-VVEventBus_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VVEventBus_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E10C6399553726D35D81B71AF02306FF /* VVPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVPassthroughSubscriber.h; sourceTree = "<group>"; };
+		E448C65A452BF3901BA641C66E45C2CE /* VVPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVPassthroughSubscriber.h; sourceTree = "<group>"; };
+		E71AB157897943AAF871376EB431B29A /* VVActionSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVActionSubscriber.m; sourceTree = "<group>"; };
 		F070F1DC6C20835739516E36BEDBA692 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = VVEventBus/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		F316F549BC32294F1B1C5F0F76D64E2B /* VVDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVDisposable.h; sourceTree = "<group>"; };
+		F53387D374EA94A85E4EC955192532E0 /* VVDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVDisposable.m; sourceTree = "<group>"; };
 		F607DE5AB081818E0077CF4EC4CD1BC7 /* Pods-VVEventBus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVEventBus_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FED83F81DAD4C1EAFB6C954065731A82 /* VVBusStations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBusStations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,38 +119,14 @@
 				8C70B841F00F562225C43D5018092839 /* VVBus.m */,
 				791D24354807C89C98FE8EF28B0B8F97 /* VVEvent.h */,
 				7B6BC6C43F9660512E76A9267DDE301E /* VVEvent.m */,
-				064FAD3AD6AC112334BB2EAFBC965AB7 /* actionSubscriber */,
-				04C7F8C80B3FD13411DAE79900B0D3AA /* disposable */,
+				C7A11431BDD7A00194346789E03681E7 /* actionSubscriber */,
+				A68573B83C1A3A30D911DFC6E07265A0 /* disposable */,
 				1B605517169C3A44B12424343D026071 /* others */,
 				F23FB2127FF93BFE90F33C62740F300E /* Pod */,
 				23DCABD1C61453443631CB0602534B87 /* Support Files */,
 			);
 			name = VVEventBus;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		04C7F8C80B3FD13411DAE79900B0D3AA /* disposable */ = {
-			isa = PBXGroup;
-			children = (
-				F316F549BC32294F1B1C5F0F76D64E2B /* VVDisposable.h */,
-				81C8C5E630295481420BC09567C87A5F /* VVDisposable.m */,
-				E10C6399553726D35D81B71AF02306FF /* VVPassthroughSubscriber.h */,
-				2EFB3FAC47EBD851E8C91E4DCAEE7A49 /* VVPassthroughSubscriber.m */,
-			);
-			name = disposable;
-			path = VVEventBus/Classes/disposable;
-			sourceTree = "<group>";
-		};
-		064FAD3AD6AC112334BB2EAFBC965AB7 /* actionSubscriber */ = {
-			isa = PBXGroup;
-			children = (
-				98F22E5F0377FB71CC84DB8C53C2410E /* VVActionSubscriber.h */,
-				2AED687F1E83FBE846E81734947312E7 /* VVActionSubscriber.m */,
-				3771DB41AEA8005BA392B16B6B4C9BDA /* VVCompoundDisposable.h */,
-				3D8DA30E7DCCA13D9A8EF4913FE9401A /* VVCompoundDisposable.m */,
-			);
-			name = actionSubscriber;
-			path = VVEventBus/Classes/actionSubscriber;
 			sourceTree = "<group>";
 		};
 		1B605517169C3A44B12424343D026071 /* others */ = {
@@ -195,6 +171,30 @@
 				01773A2D7AD341721CFE8BD2A94B6BCB /* VVEventBus */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A68573B83C1A3A30D911DFC6E07265A0 /* disposable */ = {
+			isa = PBXGroup;
+			children = (
+				0614662B7A0EAB835ED624982FB37E1C /* VVCompoundDisposable.h */,
+				105B5DA48EB8AD13DCC3768FB2E536CE /* VVCompoundDisposable.m */,
+				BAB0627DEC1FAB2EC60F38FD504596C2 /* VVDisposable.h */,
+				F53387D374EA94A85E4EC955192532E0 /* VVDisposable.m */,
+			);
+			name = disposable;
+			path = VVEventBus/Classes/disposable;
+			sourceTree = "<group>";
+		};
+		C7A11431BDD7A00194346789E03681E7 /* actionSubscriber */ = {
+			isa = PBXGroup;
+			children = (
+				3A1F2BD63AFCFE480DCE635548600734 /* VVActionSubscriber.h */,
+				E71AB157897943AAF871376EB431B29A /* VVActionSubscriber.m */,
+				E448C65A452BF3901BA641C66E45C2CE /* VVPassthroughSubscriber.h */,
+				04C9B154F298E2FA98E86A2BF7CAB679 /* VVPassthroughSubscriber.m */,
+			);
+			name = actionSubscriber;
+			path = VVEventBus/Classes/actionSubscriber;
 			sourceTree = "<group>";
 		};
 		C962279EFF45A5449A37613EA8BA216C /* Targets Support Files */ = {
@@ -267,25 +267,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BEB513375577F5584C5EC672C3C7C5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25F2785BA0D6459CFB7025A0D978F90 /* VVAction.h in Headers */,
+				367928B16046DA35F94291933F5ED7EA /* VVActionSubscriber.h in Headers */,
+				CCCB7439E47ECBC5FEDEE9C69D893FCE /* VVBus.h in Headers */,
+				D6078481FEF44BBCFA48E15FDBFA7157 /* VVBusStations.h in Headers */,
+				34976296BEFDED5558B34C23588343EC /* VVCompoundDisposable.h in Headers */,
+				A4A736CFEDFCBCCBCFFBE49AABC52A6D /* VVDisposable.h in Headers */,
+				47D3E3784833283A852FAEC4048FDBD7 /* VVEvent.h in Headers */,
+				0E1387DE6F80D545F1F6DD93B7C95E0D /* VVPassthroughSubscriber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		895E34057FB573FF897A7F3EDEA49C9C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D6113E37BB126AF59D1DA28ABFEB72B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A53DD02916862D289BEF2E0F31AC7537 /* VVAction.h in Headers */,
-				D0688D20A00E0D9D14340BF67B3DF4AD /* VVActionSubscriber.h in Headers */,
-				8F85F70FCA9CFE2E08293E617BF0704D /* VVBus.h in Headers */,
-				38F64CBC27CDFD9BAE225EBC29B0D50B /* VVBusStations.h in Headers */,
-				01E2DE50DA889F2BC9924BCFD87C1BCF /* VVCompoundDisposable.h in Headers */,
-				10E86F28123AF209DF6ACC7B47EFCEE3 /* VVDisposable.h in Headers */,
-				20A4D716CD20CE93697E01ADD5DFC9B3 /* VVEvent.h in Headers */,
-				500B4C51F2600C1FCCF06C04D645E407 /* VVPassthroughSubscriber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +296,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C63A6AD2E2647939A0034E92D47D129 /* Build configuration list for PBXNativeTarget "VVEventBus" */;
 			buildPhases = (
-				9D6113E37BB126AF59D1DA28ABFEB72B /* Headers */,
-				FDDE1128AEBEFB8E73A86879A1805C1A /* Sources */,
+				3BEB513375577F5584C5EC672C3C7C5E /* Headers */,
+				13D70E6F168B8002ECEC13330294460C /* Sources */,
 				C00A211156C44CF99E4D46F10F52808F /* Frameworks */,
 			);
 			buildRules = (
@@ -375,6 +375,23 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13D70E6F168B8002ECEC13330294460C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7431ECF301E2D9382B53CA526630CF4F /* ReplaceMe.m in Sources */,
+				C5778CA1D7A7045C1B850A30B3347756 /* VVAction.m in Sources */,
+				2AE8C3A2674D98F1BB38B0B5469FAE35 /* VVActionSubscriber.m in Sources */,
+				C336FAED2C4167FDE5737644A7178BB1 /* VVBus.m in Sources */,
+				C81D69531C744096D0E024B90A2A6972 /* VVBusStations.m in Sources */,
+				3D5F97FF071337DE0E142F7839F67150 /* VVCompoundDisposable.m in Sources */,
+				183C7B69A6DF3674DB11453B5B3FA746 /* VVDisposable.m in Sources */,
+				86B61CE825D5048DB7AABB2296BC67E4 /* VVEvent.m in Sources */,
+				6AFAC70130E949D96051D87F7CF1A18B /* VVEventBus-dummy.m in Sources */,
+				AA7DA1E4B07EFE94ACF45DBDE0D4B3F3 /* VVPassthroughSubscriber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67772347441EF7710B05916EA6B87DC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,23 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5818DA21C4A8FA5BFC1AA8A10F7AE5 /* Pods-VVEventBus_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDDE1128AEBEFB8E73A86879A1805C1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8664F1153B6D178459540888D2541FF3 /* ReplaceMe.m in Sources */,
-				9FF956F6D14A164EB202294342A181D9 /* VVAction.m in Sources */,
-				2F9F0787B3F5D6B78220BE5971608B99 /* VVActionSubscriber.m in Sources */,
-				D6F53B4FD0B61AF7C06E9A3B4B74DFDE /* VVBus.m in Sources */,
-				35B78D26FB041E745962F5DB00A53A21 /* VVBusStations.m in Sources */,
-				EB1145F33C0465A426724784E012A943 /* VVCompoundDisposable.m in Sources */,
-				80D0EDE67D58F30FC62BF24D3A35EFD3 /* VVDisposable.m in Sources */,
-				5426004EC91AB412003CE84026A2C3C0 /* VVEvent.m in Sources */,
-				FAB1324C965C410A1D59D18141CB3757 /* VVEventBus-dummy.m in Sources */,
-				647F99AC17937DB25D6377E0C51D3A90 /* VVPassthroughSubscriber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
