@@ -9,12 +9,12 @@
 #import "VVActionReporter.h"
 
 NS_ASSUME_NONNULL_BEGIN
-@class RACCompoundDisposable;
+@class VVCompoundDisposable;
 
 @interface VVPassthroughReporter : NSObject <VVActionReporter>
 
 - (instancetype)initWithReporter:(id<VVActionReporter>)reporter
-                        disposable:(RACCompoundDisposable *)disposable;
+                        disposable:(VVCompoundDisposable *)disposable;
 
 @end
 
