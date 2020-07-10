@@ -1,5 +1,6 @@
 # VVEventBus
 事件总线，提供view和controller之间的双向通信，支持target-action和block方式，支持事件的分发，其中借鉴了RAC的元素和设计思想
+之后会支持pod，还在调试
 
 [![CI Status](https://img.shields.io/travis/zxf-sagittarius/VVEventBus.svg?style=flat)](https://travis-ci.org/zxf-sagittarius/VVEventBus)
 [![Version](https://img.shields.io/cocoapods/v/VVEventBus.svg?style=flat)](https://cocoapods.org/pods/VVEventBus)
