@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## VVEventBus
 
-Copyright (c) 2020 zxfei <2593147394@qq.com>
+Copyright (c) 2020 zxf-sagittarius <2593147394@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

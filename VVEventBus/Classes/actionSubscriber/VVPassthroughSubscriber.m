@@ -2,7 +2,7 @@
 //  VVPassthroughSubscriber.m
 //  VVEventBus
 //
-//  Created by zxfei on 2020/7/9.
+//  Created by zxf-sagittarius on 2020/7/9.
 //
 
 #import "VVPassthroughSubscriber.h"

@@ -2,7 +2,7 @@
 //  VVActionSubscriber.m
 //  VVEventBus
 //
-//  Created by zxfei on 2020/7/8.
+//  Created by zxf-sagittarius on 2020/7/8.
 //
 
 #import "VVActionSubscriber.h"
