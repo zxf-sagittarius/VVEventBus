@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +18,61 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjW-oB-OTo">
+                                <rect key="frame" x="159" y="318" width="56" height="30"/>
+                                <state key="normal" title="test bus"/>
+                                <connections>
+                                    <segue destination="yXp-M6-f24" kind="show" id="Zh9-4n-mNK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LjW-oB-OTo" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="Enq-ZP-7bS"/>
+                            <constraint firstItem="LjW-oB-OTo" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="FrF-w7-6dt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Test Bus View Controller-->
+        <scene sceneID="IIW-Kw-ktj">
+            <objects>
+                <viewController id="yXp-M6-f24" customClass="VVTestBusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="45h-uf-k2k"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRf-kF-Qn1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dvf-wI-I78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-hz-euR" customClass="VVTestView">
+                                <rect key="frame" x="67.5" y="86" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bdx-12-MCe"/>
+                                    <constraint firstAttribute="width" constant="240" id="ugH-PX-lMc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hrv-hz-euR" firstAttribute="centerX" secondItem="Dvf-wI-I78" secondAttribute="centerX" id="F4a-dF-F8B"/>
+                            <constraint firstItem="hrv-hz-euR" firstAttribute="centerY" secondItem="Dvf-wI-I78" secondAttribute="centerY" constant="-173.5" id="FcH-OM-47z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pP4-c1-ZXW"/>
+                    <connections>
+                        <outlet property="testView" destination="hrv-hz-euR" id="YY8-0G-EDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRL-dA-Biv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="432"/>
         </scene>
     </scenes>
 </document>

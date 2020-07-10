@@ -1,0 +1,6 @@
+framework module VVEventBus {
+  umbrella header "VVEventBus-umbrella.h"
+
+  export *
+  module * { export * }
+}

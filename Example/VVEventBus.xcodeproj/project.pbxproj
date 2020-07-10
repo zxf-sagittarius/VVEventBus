@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2243DDA12D467B2DD5B1ADA4 /* Pods_VVEventBus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D74C5DA39F5B83980F9D443 /* Pods_VVEventBus_Tests.framework */; };
+		0C12396024B840B6004E3B90 /* VVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12395D24B840B6004E3B90 /* VVBaseView.m */; };
+		0C12396124B840B6004E3B90 /* VVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12395E24B840B6004E3B90 /* VVBaseViewController.m */; };
+		0C12396824B840C2004E3B90 /* VVTestBusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12396324B840C1004E3B90 /* VVTestBusViewController.m */; };
+		0C12396924B840C2004E3B90 /* VVTestEventDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12396524B840C2004E3B90 /* VVTestEventDefine.m */; };
+		0C12396A24B840C2004E3B90 /* VVTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12396724B840C2004E3B90 /* VVTestView.m */; };
+		165F39DBE04D68F6869F2116 /* libPods-VVEventBus_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D9F0691C787A2AA7A8F306 /* libPods-VVEventBus_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +28,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		890531498DFB2407DAF517ED /* Pods_VVEventBus_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A37D0478BB380898D9CC9 /* Pods_VVEventBus_Example.framework */; };
+		B5F75C1AB7DA54B847755C4D /* libPods-VVEventBus_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C4204A87E7DD27B817EAF3 /* libPods-VVEventBus_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,17 @@
 
 /* Begin PBXFileReference section */
 		07B6377B705945398CE7BB23 /* Pods-VVEventBus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVEventBus_Example.release.xcconfig"; path = "Target Support Files/Pods-VVEventBus_Example/Pods-VVEventBus_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0ED7B653D33C1B629FB8B4CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0C12395C24B840B6004E3B90 /* VVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBaseView.h; sourceTree = "<group>"; };
+		0C12395D24B840B6004E3B90 /* VVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBaseView.m; sourceTree = "<group>"; };
+		0C12395E24B840B6004E3B90 /* VVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBaseViewController.m; sourceTree = "<group>"; };
+		0C12395F24B840B6004E3B90 /* VVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBaseViewController.h; sourceTree = "<group>"; };
+		0C12396224B840C1004E3B90 /* VVTestBusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTestBusViewController.h; sourceTree = "<group>"; };
+		0C12396324B840C1004E3B90 /* VVTestBusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTestBusViewController.m; sourceTree = "<group>"; };
+		0C12396424B840C1004E3B90 /* VVTestEventDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTestEventDefine.h; sourceTree = "<group>"; };
+		0C12396524B840C2004E3B90 /* VVTestEventDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTestEventDefine.m; sourceTree = "<group>"; };
+		0C12396624B840C2004E3B90 /* VVTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTestView.h; sourceTree = "<group>"; };
+		0C12396724B840C2004E3B90 /* VVTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTestView.m; sourceTree = "<group>"; };
+		0ED7B653D33C1B629FB8B4CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		387120B2A16E6354D42A38C8 /* Pods-VVEventBus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVEventBus_Example.debug.xcconfig"; path = "Target Support Files/Pods-VVEventBus_Example/Pods-VVEventBus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* VVEventBus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVEventBus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,13 +75,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		653B998151DD464825CD7D6A /* Pods-VVEventBus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVEventBus_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VVEventBus_Tests/Pods-VVEventBus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D74C5DA39F5B83980F9D443 /* Pods_VVEventBus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVEventBus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845956791E66A854261935BF /* Pods-VVEventBus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVEventBus_Tests.release.xcconfig"; path = "Target Support Files/Pods-VVEventBus_Tests/Pods-VVEventBus_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		897AAF07F8C1EA1F5444BAFC /* VVEventBus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VVEventBus.podspec; path = ../VVEventBus.podspec; sourceTree = "<group>"; };
-		EB4E8D90E83D1859A1D7B41B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EE3A37D0478BB380898D9CC9 /* Pods_VVEventBus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVEventBus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897AAF07F8C1EA1F5444BAFC /* VVEventBus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VVEventBus.podspec; path = ../VVEventBus.podspec; sourceTree = "<group>"; };
+		E5D9F0691C787A2AA7A8F306 /* libPods-VVEventBus_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVEventBus_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C4204A87E7DD27B817EAF3 /* libPods-VVEventBus_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVEventBus_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4E8D90E83D1859A1D7B41B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +92,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				890531498DFB2407DAF517ED /* Pods_VVEventBus_Example.framework in Frameworks */,
+				B5F75C1AB7DA54B847755C4D /* libPods-VVEventBus_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +103,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2243DDA12D467B2DD5B1ADA4 /* Pods_VVEventBus_Tests.framework in Frameworks */,
+				165F39DBE04D68F6869F2116 /* libPods-VVEventBus_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +138,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				EE3A37D0478BB380898D9CC9 /* Pods_VVEventBus_Example.framework */,
-				6D74C5DA39F5B83980F9D443 /* Pods_VVEventBus_Tests.framework */,
+				E9C4204A87E7DD27B817EAF3 /* libPods-VVEventBus_Example.a */,
+				E5D9F0691C787A2AA7A8F306 /* libPods-VVEventBus_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +147,16 @@
 		6003F593195388D20070C39A /* Example for VVEventBus */ = {
 			isa = PBXGroup;
 			children = (
+				0C12396224B840C1004E3B90 /* VVTestBusViewController.h */,
+				0C12396324B840C1004E3B90 /* VVTestBusViewController.m */,
+				0C12396424B840C1004E3B90 /* VVTestEventDefine.h */,
+				0C12396524B840C2004E3B90 /* VVTestEventDefine.m */,
+				0C12396624B840C2004E3B90 /* VVTestView.h */,
+				0C12396724B840C2004E3B90 /* VVTestView.m */,
+				0C12395C24B840B6004E3B90 /* VVBaseView.h */,
+				0C12395D24B840B6004E3B90 /* VVBaseView.m */,
+				0C12395F24B840B6004E3B90 /* VVBaseViewController.h */,
+				0C12395E24B840B6004E3B90 /* VVBaseViewController.m */,
 				6003F59C195388D20070C39A /* VVAppDelegate.h */,
 				6003F59D195388D20070C39A /* VVAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +218,6 @@
 				653B998151DD464825CD7D6A /* Pods-VVEventBus_Tests.debug.xcconfig */,
 				845956791E66A854261935BF /* Pods-VVEventBus_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +232,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				492343A3FDD4E0816877DFDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +281,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -317,24 +341,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		492343A3FDD4E0816877DFDE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VVEventBus_Example/Pods-VVEventBus_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/VVEventBus/VVEventBus.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VVEventBus.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VVEventBus_Example/Pods-VVEventBus_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		58898207160EB7094071822E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,7 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C12396A24B840C2004E3B90 /* VVTestView.m in Sources */,
 				6003F59E195388D20070C39A /* VVAppDelegate.m in Sources */,
+				0C12396824B840C2004E3B90 /* VVTestBusViewController.m in Sources */,
+				0C12396024B840B6004E3B90 /* VVBaseView.m in Sources */,
+				0C12396124B840B6004E3B90 /* VVBaseViewController.m in Sources */,
+				0C12396924B840C2004E3B90 /* VVTestEventDefine.m in Sources */,
 				6003F5A7195388D20070C39A /* VVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

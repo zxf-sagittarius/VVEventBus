@@ -1,0 +1,22 @@
+{
+  "name": "VVEventBus",
+  "version": "1.0.0",
+  "summary": "A short description of VVEventBus.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zxf-sagittarius/VVEventBus",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zxfei": "2593147394@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zxf-sagittarius/VVEventBus.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VVEventBus/Classes/**/*.{h,m}"
+}
