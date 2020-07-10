@@ -24,29 +24,29 @@
     self.testView.bus = self.bus;
     
     // block 方式
-    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionSubscriber>  _Nonnull subscriber) {
+    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionReporter>  _Nonnull reporter) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [subscriber sendNext:@1];
-            [subscriber sendCompleted];
+            [reporter reportEvent:@1];
+            [reporter reportCompleted];
         });
         return [VVDisposable disposableWithBlock:^{
             NSLog(@"啦啦啦啦啦啦啦啦 block --------1");
         }];
     } onEvent:VVEventType_Test];
     
-    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionSubscriber>  _Nonnull subscriber) {
+    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionReporter>  _Nonnull reporter) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [subscriber sendNext:@2];
-            [subscriber sendCompleted];
+            [reporter reportEvent:@2];
+            [reporter reportCompleted];
         });
         return [VVDisposable disposableWithBlock:^{
             NSLog(@"啦啦啦啦啦啦啦啦 block -------2");
         }];
         
     } onEvent:VVEventType_Test];
-    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionSubscriber>  _Nonnull subscriber) {
-        [subscriber sendNext:@3];
-        [subscriber sendCompleted];
+    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionReporter>  _Nonnull reporter) {
+        [reporter reportEvent:@3];
+        [reporter reportCompleted];
         return [VVDisposable disposableWithBlock:^{
             NSLog(@"啦啦啦啦啦啦啦啦 block ------3");
         }];
@@ -57,17 +57,17 @@
     [self.bus registAction:@"test2:" target:self onEvent:VVEventType_Test];
 }
 
-- (void)test1:(id<VVActionSubscriber>)subscriber {
+- (void)test1:(id<VVActionReporter>)reporter {
     
-    [subscriber sendNext:@4];
-    [subscriber sendCompleted];
+    [reporter reportEvent:@4];
+    [reporter reportCompleted];
     NSLog(@"啦啦啦啦啦啦啦啦 target-action ------4");
     
 }
 
-- (void)test2:(id<VVActionSubscriber>)subscriber {
-    [subscriber sendNext:@5];
-    [subscriber sendCompleted];
+- (void)test2:(id<VVActionReporter>)reporter {
+    [reporter reportEvent:@5];
+    [reporter reportCompleted];
     NSLog(@"啦啦啦啦啦啦啦啦 target-action ------5");
 }
 

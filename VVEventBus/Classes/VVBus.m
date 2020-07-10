@@ -26,7 +26,7 @@
     return _stations;
 }
 
-- (void)registAction:(VVDisposable * _Nullable (^)(id<VVActionSubscriber> _Nonnull))action onEvent:(NSString *)event {
+- (void)registAction:(VVDisposable * _Nullable (^)(id<VVActionReporter> _Nonnull))action onEvent:(NSString *)event {
     if (action && event) {
         VVAction *act = [VVAction actionWithBlock:action];
         [self.stations addAction:act forEvent:event];

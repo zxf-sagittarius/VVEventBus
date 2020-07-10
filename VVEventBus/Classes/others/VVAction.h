@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VVActionSubscriber.h"
+#import "VVActionReporter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id target;
 @property (nonatomic, assign) SEL selector;
 
-+ (instancetype)actionWithBlock:(VVDisposable *(^)(id<VVActionSubscriber>_Nonnull subscriber))actionBlock;
++ (instancetype)actionWithBlock:(VVDisposable *(^)(id<VVActionReporter>_Nonnull reporter))actionBlock;
 
-- (VVDisposable *)execute:(id<VVActionSubscriber>)subscriber;
+- (VVDisposable *)execute:(id<VVActionReporter>)reporter;
 
 @end
 

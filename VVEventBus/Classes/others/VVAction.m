@@ -9,13 +9,13 @@
 
 @interface VVAction ()
 
-@property (nonatomic, copy) VVDisposable * _Nonnull (^actionBlock)(id<VVActionSubscriber> _Nonnull subscriber);
+@property (nonatomic, copy) VVDisposable * _Nonnull (^actionBlock)(id<VVActionReporter> _Nonnull reporter);
 
 @end
 
 @implementation VVAction
 
-+ (instancetype)actionWithBlock:(VVDisposable * _Nonnull (^)(id<VVActionSubscriber> _Nonnull))actionBlock {
++ (instancetype)actionWithBlock:(VVDisposable * _Nonnull (^)(id<VVActionReporter> _Nonnull))actionBlock {
     VVAction *action = [[VVAction alloc] init];
     action.actionBlock = [actionBlock copy];
     return action;
@@ -25,19 +25,19 @@
     _actionBlock = nil;
 }
 
-- (VVDisposable *)execute:(id<VVActionSubscriber>)subscriber {
+- (VVDisposable *)execute:(id<VVActionReporter>)reporter {
     
-    VVDisposable * (^actionBlock)(VVActionSubscriber * subscriber) = [self.actionBlock copy];
+    VVDisposable * (^actionBlock)(VVActionReporter * reporter) = [self.actionBlock copy];
     VVDisposable *disposable = nil;
     // block 形式
     if (actionBlock) {
-        disposable = actionBlock(subscriber);
+        disposable = actionBlock(reporter);
     }
     // target-action方式
     if (self.target && [self.target respondsToSelector:self.selector]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [self.target performSelector:self.selector withObject:subscriber];
+        [self.target performSelector:self.selector withObject:reporter];
 #pragma clang diagnostic pop
     }
     return disposable;

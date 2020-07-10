@@ -1,15 +1,15 @@
 //
-//  VVActionSubscriber.m
+//  VVActionReporter.m
 //  VVEventBus
 //
 //  Created by zxf-sagittarius on 2020/7/8.
 //
 
-#import "VVActionSubscriber.h"
+#import "VVActionReporter.h"
 #include "VVEvent.h"
 #import "VVCompoundDisposable.h"
 
-@interface VVActionSubscriber ()
+@interface VVActionReporter ()
 
 @property (nonatomic, copy) void(^next)(id value);
 @property (nonatomic, copy) void(^completed)(void);
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation VVActionSubscriber
+@implementation VVActionReporter
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -36,26 +36,26 @@
     return self;
 }
 
-+ (instancetype)subscriberWithPoster:(id)poster
++ (instancetype)reporterWithPoster:(id)poster
                                event:(VVEvent *)event
                                 next:(void (^)(id x))next
                            completed:(void (^)(void))completed{
     
-    VVActionSubscriber *actionSubscriber = [[VVActionSubscriber alloc] init];
-    actionSubscriber.next = [next copy];
-    actionSubscriber.completed = [completed copy];
-    actionSubscriber.poster = poster;
-    actionSubscriber.event = event;
-    return actionSubscriber;
+    VVActionReporter *actionReporter = [[VVActionReporter alloc] init];
+    actionReporter.next = [next copy];
+    actionReporter.completed = [completed copy];
+    actionReporter.poster = poster;
+    actionReporter.event = event;
+    return actionReporter;
 }
 
-#pragma VVActionSubscriber
+#pragma VVActionReporter
 
 @synthesize event;
 
 @synthesize poster;
 
-- (void)didSubscribeAction:(nonnull VVCompoundDisposable *)disposable {
+- (void)tailAction:(nonnull VVCompoundDisposable *)disposable {
     if (disposable.disposed) return;
     [self.disposable addDisposable:disposable];
     __weak typeof(self) weakSelf = self;
@@ -67,7 +67,7 @@
     }]];
 }
 
-- (void)sendCompleted {
+- (void)reportCompleted {
     @synchronized (self) {
         void(^completedBlock)(void) = [self.completed copy];
         [self.disposable dispose];
@@ -77,7 +77,7 @@
     }
 }
 
-- (void)sendNext:(nullable id)value {
+- (void)reportEvent:(nullable id)value {
     @synchronized (self) {
         void(^nextBlock)(id value) = [self.next copy];
         if (nextBlock) {

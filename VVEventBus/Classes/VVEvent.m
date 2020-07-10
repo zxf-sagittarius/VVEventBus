@@ -6,7 +6,7 @@
 //
 
 #import "VVEvent.h"
-#import "VVPassthroughSubscriber.h"
+#import "VVPassthroughReporter.h"
 #import "VVCompoundDisposable.h"
 #import "VVAction.h"
 
@@ -14,7 +14,7 @@
     NSMutableDictionary *_params;
 }
 
-@property (nonatomic, strong) NSMutableArray<id <VVActionSubscriber>> *subscribers;
+@property (nonatomic, strong) NSMutableArray<id <VVActionReporter>> *reporters;
 
 @property (nonatomic, strong) VVCompoundDisposable *compoundDisposable;
 
@@ -62,13 +62,13 @@
         VVAction *action = actions[i];
         
         VVCompoundDisposable *currentDisposable = [VVCompoundDisposable compoundDisposable];
-        VVActionSubscriber *innerSubscriber = [VVActionSubscriber subscriberWithPoster:self.poster
+        VVActionReporter *innerReporter = [VVActionReporter reporterWithPoster:self.poster
                                                                               event:self next:next
                                                                           completed:^{
             [currentDisposable dispose];
         }];
-        VVPassthroughSubscriber *subscriber = [[VVPassthroughSubscriber alloc] initWithSubscriber:innerSubscriber disposable:currentDisposable];
-        VVDisposable *disposable = [action execute:subscriber];
+        VVPassthroughReporter *reporter = [[VVPassthroughReporter alloc] initWithReporter:innerReporter disposable:currentDisposable];
+        VVDisposable *disposable = [action execute:reporter];
         [currentDisposable addDisposable:disposable];
         
         if (!currentDisposable.disposed) {

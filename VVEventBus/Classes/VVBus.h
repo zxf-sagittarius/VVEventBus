@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VVActionSubscriber.h"
+#import "VVActionReporter.h"
 #import "VVEvent.h"
 #import "VVDisposable.h"
 
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
              onEvent:(nonnull NSString *)event;
 
 // block 方式注册
-- (void)registAction:(nonnull VVDisposable  * _Nullable (^)(id<VVActionSubscriber> _Nonnull subscriber))action
+- (void)registAction:(nonnull VVDisposable  * _Nullable (^)(id<VVActionReporter> _Nonnull reporter))action
              onEvent:(nonnull NSString *)event;
 
 @end

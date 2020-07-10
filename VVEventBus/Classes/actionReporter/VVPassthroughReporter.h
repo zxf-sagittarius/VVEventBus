@@ -1,19 +1,19 @@
 //
-//  VVPassthroughSubscriber.h
+//  VVPassthroughReporter.h
 //  VVEventBus
 //
 //  Created by zxf-sagittarius on 2020/7/9.
 //
 
 #import <Foundation/Foundation.h>
-#import "VVActionSubscriber.h"
+#import "VVActionReporter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class RACCompoundDisposable;
 
-@interface VVPassthroughSubscriber : NSObject <VVActionSubscriber>
+@interface VVPassthroughReporter : NSObject <VVActionReporter>
 
-- (instancetype)initWithSubscriber:(id<VVActionSubscriber>)subscriber
+- (instancetype)initWithReporter:(id<VVActionReporter>)reporter
                         disposable:(RACCompoundDisposable *)disposable;
 
 @end
