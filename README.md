@@ -1,2 +1,2 @@
 # VVEventBus
-事件总线，提供view和controller之间的通信，借鉴了RAC的元素和设计思想，支持target-action和block方式
+事件总线，提供view和controller之间的双向通信，支持target-action和block方式，其中借鉴了RAC的元素和设计思想
