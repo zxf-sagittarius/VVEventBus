@@ -6,7 +6,7 @@
 //
 
 #import "VVActionReporter.h"
-#include "VVEvent.h"
+#import "VVEvent.h"
 #import "VVCompoundDisposable.h"
 
 @interface VVActionReporter ()
